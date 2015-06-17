@@ -14,6 +14,7 @@
 		B9BFBF611B31BFCC0080DB5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9BFBF601B31BFCC0080DB5C /* Images.xcassets */; };
 		B9BFBF641B31BFCC0080DB5C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9BFBF621B31BFCC0080DB5C /* LaunchScreen.xib */; };
 		B9BFBF701B31BFCC0080DB5C /* BagOfTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BFBF6F1B31BFCC0080DB5C /* BagOfTests.m */; };
+		B9BFBF7C1B31BFEB0080DB5C /* BagOf.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BFBF7B1B31BFEB0080DB5C /* BagOf.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		B9BFBF691B31BFCC0080DB5C /* BagOfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BagOfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9BFBF6E1B31BFCC0080DB5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9BFBF6F1B31BFCC0080DB5C /* BagOfTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BagOfTests.m; sourceTree = "<group>"; };
+		B9BFBF7A1B31BFEB0080DB5C /* BagOf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BagOf.h; path = BagOf/BagOf.h; sourceTree = "<group>"; };
+		B9BFBF7B1B31BFEB0080DB5C /* BagOf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BagOf.m; path = BagOf/BagOf.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		B9BFBF521B31BFCC0080DB5C /* BagOf */ = {
 			isa = PBXGroup;
 			children = (
+				B9BFBF791B31BFD50080DB5C /* BagOf */,
 				B9BFBF571B31BFCC0080DB5C /* AppDelegate.h */,
 				B9BFBF581B31BFCC0080DB5C /* AppDelegate.m */,
 				B9BFBF5A1B31BFCC0080DB5C /* ViewController.h */,
@@ -117,6 +121,15 @@
 				B9BFBF6E1B31BFCC0080DB5C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9BFBF791B31BFD50080DB5C /* BagOf */ = {
+			isa = PBXGroup;
+			children = (
+				B9BFBF7A1B31BFEB0080DB5C /* BagOf.h */,
+				B9BFBF7B1B31BFEB0080DB5C /* BagOf.m */,
+			);
+			name = BagOf;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9BFBF5C1B31BFCC0080DB5C /* ViewController.m in Sources */,
+				B9BFBF7C1B31BFEB0080DB5C /* BagOf.m in Sources */,
 				B9BFBF591B31BFCC0080DB5C /* AppDelegate.m in Sources */,
 				B9BFBF561B31BFCC0080DB5C /* main.m in Sources */,
 			);

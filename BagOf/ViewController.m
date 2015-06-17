@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "BagOf.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    for (NSInteger i = 0; i < 10; ++i) {
+    
+        NSArray *selectedNumbers = [BagOf bagOfSize:7 getNumbersOfCount:7];
+        for (NSNumber *selectedNumber in selectedNumbers) {
+            NSLog(@"number: %zd", [selectedNumber integerValue]);
+        }
+        NSLog(@"---------");
+    }
+    
+    for (NSInteger i = 0; i < 10; ++i) {
+        
+        NSArray *selectedNumbers = [BagOf bagOfSize:7 getNumbersOfCount:14 withBagCount:2];
+        for (NSNumber *selectedNumber in selectedNumbers) {
+            NSLog(@"number: %zd", [selectedNumber integerValue]);
+        }
+        NSLog(@"---------");
+    }
 }
 
 - (void)didReceiveMemoryWarning {
